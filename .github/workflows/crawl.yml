@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # 外部フォークからの不正実行を防止（所有者リポジトリでのみ稼働）
-    if: github.repository_owner == github.actor
+    if: github.repository == 'basement-with-cheese/job-crawler'
 
     steps:
       - name: Checkout repository
